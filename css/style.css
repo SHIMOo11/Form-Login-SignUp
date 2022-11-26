@@ -1,0 +1,189 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #23242a;
+}
+.box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -38%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,transparent,  #45f3ff,#45f3ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    top: -38%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,transparent, #45f3ff ,#45f3ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.form{
+    position: absolute;
+    background-color: #28292d;
+    z-index: 999999999999;
+    border-radius: 8px;
+    inset: 2px;
+    padding: 30px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    background-color: rgb(246, 232, 215);
+    padding: 30px;
+}
+.form h2{
+    font-weight: 500;
+    text-align: center;
+    color: #45f3ff;
+    letter-spacing: .1em;
+}
+.inputBox{
+    position: relative;
+    width: 80%px;
+    margin-top: 35px;
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    padding: 20px 10px 10px;
+    z-index: 10;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+    padding: 20px 0px 10px;
+    color: #8f8f8f;
+    transition: .5s;
+}
+.inputBox input:valid ~span,
+.inputBox input:focus ~ span{
+    color: #45f3ff;
+    transform:translateX(0px) translateY(-35px);
+    font-size: .75em;
+}
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background: #45f3ff;
+    width: 100%;
+    pointer-events: none;
+    transition: .5s;
+    z-index: 9;
+    border-radius: 4px;
+}
+.inputBox input:valid ~i,
+.inputBox input:focus ~ i{
+    height: 44px;
+
+}
+.links{
+    margin-top: 10px;
+}
+.links a{
+    margin: 20px 0px ;
+    font-size: 18px;
+    color: #45f3ff;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: 500;
+}
+.links span{
+    font-size: 18px;
+    color: #8f8f8f;
+    font-weight: 500;
+}
+/* input[type="submit"] */
+button
+{
+    border: none;
+    outline: none;
+    padding: 11px 25px;
+    width: 100px;
+    background: #45f3ff;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+/* input[type="submit"]:hover */
+button.hover
+{
+    opacity: .8;
+}
+
+#msgAlert{
+    margin-top: 10px;
+}
+.menu{
+    
+    background-color:  rgb(235, 216, 193);
+    /* padding: 20px 0px; */
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(182, 163, 140);
+    margin: 0px 10px;
+    
+}
+.menu span{
+    color: rgb(141, 132, 116);
+    font-size: 30px;
+
+}
+.welcome img{
+    width: 300px ;
+    height: 90px;
+    margin-left: -120px;
+    margin-right: 30px;
+}
+.welcome h1{
+    color: rgb(182, 163, 140);
+}

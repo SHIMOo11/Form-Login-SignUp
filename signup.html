@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+            <div class="login">
+                <div class="box">
+                    <div class="form">
+                        <h2>SignUp </h2>
+                        <div class="inputBox">
+                            <input type="text" required="required"  id="userNameLoginInput">
+                            <span>Username</span>
+                            <i></i>
+                        </div>
+                        <div id="usernameInputAlert" class="alert alert-danger py-2 d-none">
+                            Username must start with capital letter
+                            and contains at least 3 letters
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" required="required" id="emailLoginInput">
+                            <span>Email</span>
+                            <i></i>
+                        </div>
+                        <div id="emailInputAlert" class="alert d-block alert-danger py-2 d-none">
+                            Invalid Email Address!
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" required="required" id="passwordLoginInput">
+                            <span>Password</span>
+                            <i></i>
+
+                        </div>
+                        <div id="passwordInputAlert" class="alert alert-danger py-2 d-none ">
+                            Password must be 5 characters at least
+                            Cannot contain special characters
+                        </div>
+                        <div id="msgAlert" class="text-center text-danger d-none mb-2">
+        
+                        </div>
+                        <!-- <a target="_blank" ><input type="submit" value="SignUp" id="inputSignUp"></a> -->
+                        <button id="inputSignUp" type="submit">SignUp</button>
+                        <div class="links">
+                            
+                            <span>Already Have Account? </span><a href="index.html" target="_blank"> LogIn Now.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
